@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────
+# Zecpath AI – .gitignore
+# ─────────────────────────────────────────────
+
+# Environment
+.env
+.env.*
+!.env.example
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Logs
+logs/*.log
+logs/*.json
+
+# Data (real candidate data must never be committed)
+data/resumes/*
+data/transcripts/*
+data/call_logs/*
+!data/test_data/
+!data/resumes/.gitkeep
+!data/transcripts/.gitkeep
+!data/call_logs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
